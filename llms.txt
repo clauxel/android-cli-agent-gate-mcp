@@ -1,0 +1,15 @@
+# Android CLI Agent Gate
+
+Android CLI Agent Gate is a hosted remote MCP for Android CLI agent build gate.
+
+Website: https://androidcliagentgate.clauxel.com/
+Docs pattern reference: https://github.com/clauxel/MiroFish
+Primary keyword: Android CLI agent build gate
+Type: MCP
+Default plan: team
+MCP endpoint: https://androidcliagentgate.clauxel.com/mcp
+Server card: https://androidcliagentgate.clauxel.com/server-card.json
+Registry name: com.clauxel.androidcliagentgate/androidcliagentgate-mcp
+Tools: check_android_cli_build, suggest_android_fix, explain_permission_blocker, issue_build_gate_receipt, export_mobile_agent_log
+
+Public boundary: docs-only repository; no production source code or secrets.
