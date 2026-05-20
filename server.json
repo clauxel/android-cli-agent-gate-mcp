@@ -1,13 +1,11 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.androidcliagentgate/androidcliagentgate-mcp",
-  "description": "Android CLI Agent Gate is a hosted remote MCP for Android CLI agent build gate.",
+  "title": "Android CLI Agent Gate MCP",
+  "description": "Paid remote MCP for Android CLI agent build gate, structured receipts, audit logs, and reviewer-ready evidence.",
   "version": "1.0.0",
-  "website_url": "https://androidcliagentgate.clauxel.com/",
-  "repository": {
-    "url": "https://github.com/clauxel/android-cli-agent-gate-mcp",
-    "source": "github"
-  },
+  "websiteUrl": "https://androidcliagentgate.clauxel.com/",
+  "documentationUrl": "https://github.com/clauxel/android-cli-agent-gate-mcp",
+  "serverCardUrl": "https://androidcliagentgate.clauxel.com/server-card.json",
   "remotes": [
     {
       "type": "streamable-http",
@@ -15,17 +13,16 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website.",
-          "is_required": true,
-          "is_secret": true
+          "description": "Bearer token from the product website."
         }
       ]
     }
   ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "title": "Android CLI Agent Gate MCP",
-      "server_card_url": "https://androidcliagentgate.clauxel.com/server-card.json"
-    }
-  }
+  "tags": [
+    "android",
+    "cli",
+    "agent",
+    "gate",
+    "build"
+  ]
 }
