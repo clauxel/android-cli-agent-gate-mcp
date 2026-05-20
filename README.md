@@ -1,48 +1,49 @@
-# Android CLI Agent Gate MCP
+# Android CLI Agent Gate
 
-Android CLI agent build gate with structured receipts.
+Android CLI Agent Gate is a hosted remote MCP for Android CLI agent build gate.
 
-Paid remote MCP for Android CLI agent build gate, structured receipts, audit logs, and reviewer-ready evidence.
+This repository is a public documentation project for Android CLI Agent Gate. Its structure follows the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and a public-safe boundary.
 
-## Public Endpoints
+## Start Here
 
-- Website: https://androidcliagentgate.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- MCP endpoint: https://androidcliagentgate.clauxel.com/mcp
+- Website: https://androidcliagentgate.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=androidcliagentgate_public_docs&utm_content=readme_home
+- Pricing: https://androidcliagentgate.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=androidcliagentgate_public_docs&utm_content=readme_pricing
+- Checkout: https://androidcliagentgate.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=androidcliagentgate_public_docs&utm_content=readme_checkout
+- Support: support@aigeamy.com
+
+## Remote MCP
+
+- Endpoint: https://androidcliagentgate.clauxel.com/mcp
 - Server card: https://androidcliagentgate.clauxel.com/server-card.json
 - Registry name: `com.clauxel.androidcliagentgate/androidcliagentgate-mcp`
+- Tools: `check_android_cli_build`, `suggest_android_fix`, `explain_permission_blocker`, `issue_build_gate_receipt`, `export_mobile_agent_log`
 
-## Access
+## Reading Order
 
-This is a paid hosted remote MCP. Production calls require a bearer token issued from the product website.
+1. [Quickstart](guide/quickstart.md)
+2. [Evaluation guide](guide/evaluation.md)
+3. [Checkout and pricing](guide/checkout-and-pricing.md)
+4. [Workflow notes](features/workflow.md)
+5. [Security model](features/security-model.md)
+6. [Public link reference](reference/links.md)
 
-```http
-Authorization: Bearer <token>
-```
+## Audience
 
-Unauthenticated browser visits to `/mcp` return a clear JSON error instead of internal details.
+developer platform teams, release owners, AI engineering leads, and delivery reviewers.
 
-## Tools
+## Capabilities
 
-- `check_android_cli_build`
-- `suggest_android_fix`
-- `explain_permission_blocker`
-- `issue_build_gate_receipt`
-- `export_mobile_agent_log`
+- Streamable HTTP MCP endpoint
+- Bearer-token access for production calls
+- Structured tool-call output
+- Receipt-oriented evidence export
+- Public server card and registry metadata
+- MCP tool: check_android_cli_build
+- MCP tool: suggest_android_fix
+- MCP tool: explain_permission_blocker
+- MCP tool: issue_build_gate_receipt
+- MCP tool: export_mobile_agent_log
 
-## Quick Start
+## Public-Safe Boundary
 
-1. Open the website and choose a plan.
-2. Create or request an API token.
-3. Add the endpoint to an MCP client that supports Streamable HTTP remote servers.
-4. Send JSON-RPC requests with the bearer token.
-
-## Useful Links
-
-- Product page: https://androidcliagentgate.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- Pricing: https://androidcliagentgate.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605#pricing
-- Server card: https://androidcliagentgate.clauxel.com/server-card.json
-- MCP endpoint: https://androidcliagentgate.clauxel.com/mcp
-
-## Status
-
-This repository is a public documentation and directory-submission reference for the hosted service. It does not contain the private production source code.
+This repository contains documentation only. It does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.
